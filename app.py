@@ -1,7 +1,9 @@
-from flask import Flask
+'''
+app.py
 
-app = Flask(__name__)
+Main app module.
+Set env var FLASK_APP to this
+to run flask app.
+'''
 
-@app.route("/")
-def index():
-    return "Hello! I'm Keenan, welcome to my personal website."
+from backend import app
