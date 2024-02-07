@@ -7,7 +7,8 @@ function App() {
   const [getMessage, setGetMessage] = useState({})
 
   useEffect(() => {
-    axios.get('https://keenanchan.com/api/hello').then(response => {
+    // using unaliased site here for performance reasons
+    axios.get('https://personal-website-keenanjchan-4131bf7ce773.herokuapp.com/api/hello').then(response => {
       console.log("SUCCESS", response)
       setGetMessage(response)
     }).catch(error => {
