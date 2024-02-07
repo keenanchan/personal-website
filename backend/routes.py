@@ -4,8 +4,8 @@ from flask import (
 )
 from backend import app
 
-@app.route("/")
-def index():
+@app.route("/", defaults={'path': ''})
+def index(path):
     # return "Hello! I'm Keenan, welcome to my personal website."
     
     # use when frontend setup!

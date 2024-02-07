@@ -8,6 +8,7 @@ from flask import (
     Flask,
     send_from_directory
 )
+from flask_cors import CORS # comment on deployment
 
 # app = Flask(__name__)
 
@@ -17,5 +18,7 @@ app = Flask(
     static_folder='../frontend/build',
     static_url_path=''
 )
+
+# CORS(app)
 
 from backend import routes
